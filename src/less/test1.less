@@ -1,0 +1,28 @@
+@bg-color:powderblue;
+@bg-color1:coral;
+@color: #3d82d1;
+.left_box {
+    background: desaturate(@color, 18%);
+}
+.middle_box {   
+    background: @color;
+}
+.right_box {
+    background: saturate(@color, 18%);
+}
+body{
+	background-color: @bg-color;
+}
+h1{
+	color: blue;
+}
+p{
+	color: skyblue;
+}
+.box{
+	background: desaturate(@bg-color1, 5%);
+	width:25%;
+	height:150px;
+	border:solid 1px @bg-color;
+	display:inline-block;
+}
